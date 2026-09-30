@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AQUORA | Smart Hydration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            💧 AQUORA
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <a href="#products" class="nav-button">
+            Shop Now
+        </a>
+
+    </header>
+
+
+    <!-- =========================
+         HOME
+    ========================== -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="small-title">
+                SMART HYDRATION
+            </span>
+
+            <h1>
+                Drink Smart.<br>
+                Live Better.
+            </h1>
+
+            <p>
+                Stylish, affordable and everyday-friendly
+                water bottles designed for everyone.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#products" class="hero-button">
+                    Explore AQUORA
+                </a>
+
+                <a href="#features" class="secondary-button">
+                    Discover More
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+    <div class="collection-glow"></div>
+
+    <img
+        src="assets/aquora-collection.png"
+        alt="AQUORA Bottle Collection"
+        class="collection-image"
+    >
+
+    <div class="collection-badge">
+        <strong>10+</strong>
+        <span>Styles</span>
+    </div>
+
+</div>
+
+    </section>
+
+
+    <!-- =========================
+         FEATURES
+    ========================== -->
+
+    <section class="features" id="features">
+
+        <div class="section-heading">
+
+            <span>WHY AQUORA</span>
+
+            <h2>
+                Made for Everyday Life
+            </h2>
+
+            <p>
+                Simple features. Practical design.
+                Made for everyone.
+            </p>
+
+        </div>
+
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    💧
+                </div>
+
+                <h3>
+                    Stay Hydrated
+                </h3>
+
+                <p>
+                    Carry your favourite drink wherever
+                    you go and stay refreshed all day.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🌈
+                </div>
+
+                <h3>
+                    Multiple Colours
+                </h3>
+
+                <p>
+                    Choose a colour that matches
+                    your personality and style.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🥤
+                </div>
+
+                <h3>
+                    Straw & Normal
+                </h3>
+
+                <p>
+                    Select a convenient straw model
+                    or a simple classic bottle.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    💰
+                </div>
+
+                <h3>
+                    Affordable
+                </h3>
+
+                <p>
+                    Designed with budget-friendly
+                    prices for everyone.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRODUCTS
+    ========================== -->
+
+    <section class="products" id="products">
+
+        <div class="section-heading product-heading">
+
+            <span>CHOOSE YOUR AQUORA</span>
+
+            <h2>
+                Your Bottle. Your Style.
+            </h2>
+
+            <p>
+                Customize your AQUORA bottle
+                based on your everyday needs.
+            </p>
+
+        </div>
+
+
+        <div class="product-box">
+
+
+            <!-- PRODUCT IMAGE -->
+
+            <div class="product-image-area">
+
+                <div class="product-glow"></div>
+
+                <img
+                    id="productImage"
+                    src="assets/straw-bottle.png"
+                    alt="AQUORA Product"
+                    class="product-image"
+                >
+
+                <span class="image-label">
+                    AQUORA
+                </span>
+
+            </div>
+
+
+            <!-- PRODUCT OPTIONS -->
+
+            <div class="product-info">
+
+                <span class="product-label">
+                    AQUORA COLLECTION
+                </span>
+
+                <h3 id="productTitle">
+                    AQUORA 500 ml
+                </h3>
+
+                <p>
+                    Choose your preferred model, size,
+                    shape and colour.
+                </p>
+
+
+                <!-- MODEL -->
+
+                <div class="option-group">
+
+                    <h4>
+                        Model
+                    </h4>
+
+                    <div class="option-buttons">
+
+                        <button
+                            class="model-btn active"
+                            onclick="selectModel('Straw', this)"
+                        >
+                            🥤 Straw
+                        </button>
+
+                        <button
+                            class="model-btn"
+                            onclick="selectModel('Normal', this)"
+                        >
+                            💧 Normal
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SIZE -->
+
+                <div class="option-group">
+
+                    <h4>
+                        Size
+                    </h4>
+
+                    <div class="option-buttons">
+
+                        <button
+                            class="size-btn active"
+                            onclick="selectSize('500 ml', this)"
+                        >
+                            500 ml
+                        </button>
+
+                        <button
+                            class="size-btn"
+                            onclick="selectSize('750 ml', this)"
+                        >
+                            750 ml
+                        </button>
+
+                        <button
+                            class="size-btn"
+                            onclick="selectSize('1 L', this)"
+                        >
+                            1 L
+                        </button>
+
+                        <button
+                            class="size-btn"
+                            onclick="selectSize('1.5 L', this)"
+                        >
+                            1.5 L
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SHAPE -->
+
+                <div class="option-group">
+
+                    <h4>
+                        Shape
+                    </h4>
+
+                    <div class="option-buttons">
+
+                        <button
+                            class="shape-btn active"
+                            onclick="selectShape('Slim', this)"
+                        >
+                            Slim
+                        </button>
+
+                        <button
+                            class="shape-btn"
+                            onclick="selectShape('Classic', this)"
+                        >
+                            Classic
+                        </button>
+
+                        <button
+                            class="shape-btn"
+                            onclick="selectShape('Sport', this)"
+                        >
+                            Sport
+                        </button>
+
+                        <button
+                            class="shape-btn"
+                            onclick="selectShape('Premium', this)"
+                        >
+                            Premium
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- COLOUR -->
+
+                <div class="option-group">
+
+                    <h4>
+                        Colour
+                    </h4>
+
+                    <div class="colour-buttons">
+
+                        <button
+                            class="colour black active"
+                            onclick="selectColor('Black', this)"
+                            aria-label="Black"
+                        ></button>
+
+                        <button
+                            class="colour blue"
+                            onclick="selectColor('Blue', this)"
+                            aria-label="Blue"
+                        ></button>
+
+                        <button
+                            class="colour purple"
+                            onclick="selectColor('Purple', this)"
+                            aria-label="Purple"
+                        ></button>
+
+                        <button
+                            class="colour pink"
+                            onclick="selectColor('Pink', this)"
+                            aria-label="Pink"
+                        ></button>
+
+                        <button
+                            class="colour green"
+                            onclick="selectColor('Green', this)"
+                            aria-label="Green"
+                        ></button>
+
+                        <button
+                            class="colour orange"
+                            onclick="selectColor('Orange', this)"
+                            aria-label="Orange"
+                        ></button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PRICE -->
+
+                <div class="price-area">
+
+                    <div>
+
+                        <span>
+                            Starting From
+                        </span>
+
+                        <strong id="productPrice">
+                            ₹99
+                        </strong>
+
+                    </div>
+
+                    <button
+                        class="cart-button"
+                        onclick="addToCart()"
+                    >
+                        Add to Cart 🛒
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         HOW IT WORKS
+    ========================== -->
+
+    <section class="how-it-works">
+
+        <div class="section-heading">
+
+            <span>HOW IT WORKS</span>
+
+            <h2>
+                Simple. Easy. Everyday.
+            </h2>
+
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+
+                <span>01</span>
+
+                <h3>
+                    Choose
+                </h3>
+
+                <p>
+                    Select your preferred bottle
+                    model and design.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <span>02</span>
+
+                <h3>
+                    Customize
+                </h3>
+
+                <p>
+                    Pick your size, shape and
+                    favourite colour.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <span>03</span>
+
+                <h3>
+                    Carry
+                </h3>
+
+                <p>
+                    Take your AQUORA anywhere
+                    you go.
+                </p>
+
+            </div>
+
+
+            <div class="step">
+
+                <span>04</span>
+
+                <h3>
+                    Stay Hydrated
+                </h3>
+
+                <p>
+                    Enjoy fresh drinks and
+                    stay hydrated every day.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+
+    <section class="about" id="about">
+
+        <div class="about-content">
+
+            <span class="section-title">
+                ABOUT AQUORA
+            </span>
+
+            <h2>
+                Designed for Every Drop.
+            </h2>
+
+            <p>
+                AQUORA is a simple and affordable
+                water bottle concept created for
+                everyday use.
+            </p>
+
+            <p>
+                From students and children to
+                working professionals, AQUORA
+                offers different sizes, shapes,
+                colours and drinking options.
+            </p>
+
+            <p>
+                Our goal is simple —
+                make hydration convenient,
+                stylish and accessible for everyone.
+            </p>
+
+        </div>
+
+
+        <div class="about-highlight">
+
+            <div>
+
+                <strong>
+                    4
+                </strong>
+
+                <span>
+                    Sizes
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    4
+                </strong>
+
+                <span>
+                    Shapes
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    6
+                </strong>
+
+                <span>
+                    Colours
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+            💧 AQUORA
+        </div>
+
+        <p>
+            Smart Hydration. Everyday.
+        </p>
+
+        <p class="copyright">
+            © 2026 AQUORA. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
