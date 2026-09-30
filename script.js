@@ -60,11 +60,11 @@ function selectModel(model, button) {
 
     if (model === "Straw") {
 
-        productImage.src = "assets/straw-bottle.png";
+        productImage.src = "straw-bottle.png";
 
     } else if (model === "Normal") {
 
-        productImage.src = "assets/normal-bottle.png";
+        productImage.src = "normal-bottle.png";
     }
 
 
